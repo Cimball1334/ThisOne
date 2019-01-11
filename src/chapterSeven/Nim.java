@@ -18,7 +18,7 @@ public class Nim {
 			System.out.println("There are " + stones + "stones left. How many would you like?");
 			cpu();
 			
-		}
+		}//
 	}
 	
 	public static void drawStones() {
