@@ -11,24 +11,13 @@ public class IsoTriangle {
 		int size = input.nextInt();
 System.out.println("" + size);
 		
-//for(int x = size; x > 0; x-=1) {
-//			addSpaces(size);
-//			drawBar(size - x);
-//		}
-
-addSpaces(size -1);
+addSpaces(3);
 drawBar(1);
-	
 	}
 
-
-	
-	
-	
 	
 	public static void drawBar (int length) {
-	//length is how many it will print out
-		//length 2 prints 2 *
+
 		for(int i = 0; i < length; i++) {
 			
 			System.out.print("*");
@@ -40,7 +29,7 @@ drawBar(1);
 	
 	public static void addSpaces(int iteration) {
 		for (int iterations = iteration; iterations > 0; iteration-- ) {
-			System.out.print("");
+			System.out.print("-");
 		}
 	}
 }
