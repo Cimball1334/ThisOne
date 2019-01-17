@@ -52,15 +52,23 @@ public class Nim {
 	}
 
 	public static int drawStones(int totalStones) {
-		int x = (int) (Math.random() * 3) + 1;
-		// handles computer randoms
-		if (isValidEntry(x, totalStones) == true) {
+//		int x = (int) (Math.random() * 3) + 1;
+//		// handles computer randoms
+//		if (isValidEntry(x, totalStones) == true) {
+//			return x;
+//		} else {
+//			cpu(totalStones);
+		
+		int x = 0;
+		do 
+		{
+			x = (int) (Math.random() * 3) + 1;
 			return x;
-		} else {
-			cpu(totalStones);
-			return 0;
-
 		}
+		while(
+					isValidEntry(x, totalStones) == true);
+	
+		
 
 	}
 
