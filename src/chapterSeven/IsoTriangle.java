@@ -5,15 +5,16 @@ import java.util.Scanner;
 public class IsoTriangle {
 	public static void main(String args[]) {
 		Scanner input = new Scanner(System.in);
-	//this needs to call add spaces then call draw bar
+	
 		System.out.println("What is your number?");
 	
-		int size = input.nextInt();
-System.out.println("" + size);
+			int userNum = input.nextInt();
 		
-addSpaces(3);
-drawBar(1);
-	}
+			for(int x = 0; x < userNum; x++) {
+				addSpaces(userNum - x - 1);
+				drawBar(x*2 + 1);
+			}
+		}
 
 	
 	public static void drawBar (int length) {
@@ -27,9 +28,13 @@ drawBar(1);
 		System.out.println();
 	}
 	
+	
 	public static void addSpaces(int iteration) {
-		for (int iterations = iteration; iterations > 0; iteration-- ) {
-			System.out.print("-");
+		for(int i = 0; i < iteration; i++) {
+			
+			System.out.print(" ");
+		
 		}
+			
 	}
-}
+} 

@@ -52,12 +52,6 @@ public class Nim {
 	}
 
 	public static int drawStones(int totalStones) {
-//		int x = (int) (Math.random() * 3) + 1;
-//		// handles computer randoms
-//		if (isValidEntry(x, totalStones) == true) {
-//			return x;
-//		} else {
-//			cpu(totalStones);
 		
 		int x = 0;
 		do 
@@ -73,38 +67,7 @@ public class Nim {
 	}
 
 	public static boolean isValidEntry(int entry, int totalStones) {
-		// checks to make sure between 1-3 stones
-//		if (totalStones == 3) {
-//			if (entry > 0 && entry < 4) {
-//				return true;
-//			}else {
-//				return false;
-//			}
-//		} 
-//		else if (totalStones == 2) {
-//			if (entry > 0 && entry < 3) {
-//				return true;
-//			}else {
-//				return false;
-//			}
-//		}
-//		else if (totalStones == 1) {
-//			if (entry > 0 && entry < 2) {
-//				return true;
-//			}else {
-//				return false;
-//			}
-//		}
-//		else if (totalStones > 3) { 
-//			if (entry > 0 && entry < 4) {
-//			return true;
-//			}else {
-//			return false;
-//
-//			}
-//		}
-//		return false;
-		
+
 		if (entry > 0 && entry < 4 && entry <= totalStones) {
 			return true;
 			}else {
