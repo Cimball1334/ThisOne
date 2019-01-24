@@ -18,7 +18,7 @@ public class PerfectInteger {
 
 				if (x % factor == 0) {
 					sum = sum + factor;
-					System.out.println("factor: " + factor);
+					//System.out.println("factor: " + factor);
 				}
 
 			}
@@ -28,13 +28,14 @@ public class PerfectInteger {
 			if (x > 1) {
 				sum = sum - x;
 			}
-			System.out.println("sum " + sum);
+			//System.out.println("sum " + sum);
 			if (isPerfect(sum, x) == true) {
 				System.out.println(x + " is perfect");
 			
-				sum = 0;
+				
 			}
-			System.out.print("\n");
+			//System.out.print("\n");
+			sum = 0;
 		}
 
 	}
