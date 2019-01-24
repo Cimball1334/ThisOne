@@ -19,8 +19,7 @@ public class PerfectInteger {
 				if (x % factor == 0) {
 					sum = sum + factor;
 					//System.out.println("factor: " + factor);
-				}
-
+				}//
 			}
 			
 			
