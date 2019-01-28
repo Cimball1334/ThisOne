@@ -12,7 +12,7 @@ public class PerfectInteger {
 		Scanner input = new Scanner(System.in);
 		int sum = 0;
 
-		for (int x = 1; x <= 100; x++) {
+		for (int x = 1; x <= 10000; x++) {
 
 			for (int factor = 1; factor <= x; factor++) {
 
