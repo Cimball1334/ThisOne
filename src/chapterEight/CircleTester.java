@@ -19,7 +19,7 @@ public class CircleTester {
 		System.out.println("efe area " + efe.getArea());
 		System.out.println("efe circumference" + efe.getCircumferance());
 		
-		efe.joke();
+		Circle.joke();
 		
 		}
 
