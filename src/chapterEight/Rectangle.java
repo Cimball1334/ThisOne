@@ -5,7 +5,7 @@ public class Rectangle {
 	public double width;
 	public Rectangle() {
 		setLength(1);
-		setWidth(2);
+		setWidth(1);
 	}
 	
 	public Rectangle(double length, double width) {
@@ -17,6 +17,10 @@ public class Rectangle {
 	public double area() {
 		
 		return length * width;
+	}
+	
+	public String displayAreaFormula() {
+		return "The formula is  " + length + " * " + width + " = " + area();
 	
 	}
 	
@@ -28,6 +32,16 @@ public class Rectangle {
 		
 	}
 	
+	public String toString() {
+		return "The Area is " + length * width;
+	}
+	
+//	public boolean equals(Object c) {
+//		Rectangle test = (Circle) c;
+//		
+//		if(t
+//	}
+//	
 	public void setLength(double newLength) {
 		length = newLength;
 	}
@@ -37,7 +51,7 @@ public class Rectangle {
 	}
 	
 	public void setWidth(double newWidth) {
-		length = newWidth;
+		width = newWidth;
 	}
 	
 	public double getWidth() {

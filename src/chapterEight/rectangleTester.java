@@ -7,11 +7,9 @@ public class rectangleTester {
 		Rectangle nadide = new Rectangle();
 		Rectangle tom = new Rectangle(3,4);
 		
-		nadide.area();
-		nadide.perimeter();
-		
-		tom.area();
-		tom.perimeter();
+
+	System.out.println(tom.area());
+	System.out.println(tom.displayAreaFormula());
 		}
 	
 }
