@@ -11,7 +11,7 @@ private double total;
 	}
 	
 	public void addCoins(double coins) {
-		total = total + coins;
+		total = total + coins * 100;
 	}
 	
 	public void takeMoney() {
@@ -19,7 +19,7 @@ private double total;
 	}
 	
 	public double getTotal() {
-		return total;
+		return total / 100;
 	}
 	
 	public void setTotal(double total) {
