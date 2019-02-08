@@ -8,9 +8,9 @@ public class Rectangle {
 		setWidth(1);
 	}
 	
-	public Rectangle(double length, double width) {
-		setLength(length);
-		setWidth(width);
+	public Rectangle(double newLength, double newWidth) {
+		length = newLength;
+		width = newWidth;
 	}
 
 	
@@ -26,24 +26,30 @@ public class Rectangle {
 	
 	public double perimeter() {
 		return 2 * (length + width);
-	}
-	
-	public static void main(String args[]) {
 		
 	}
+	
 	
 	public String toString() {
 		return "The Area is " + length * width;
 	}
 	
-//	public boolean equals(Object c) {
-//		Rectangle test = (Circle) c;
-//		
-//		if(t
-//	}
-//	
+
+
+	
+	public boolean equals(Object c) {
+		Rectangle testObj = (Rectangle) c;
+
+		if(testObj.getWidth() == width && testObj.getLength() == length) {
+			return true;
+		}
+			return false;
+				
+	
+	}
 	public void setLength(double newLength) {
 		length = newLength;
+		
 	}
 	
 	public double getLength() {
