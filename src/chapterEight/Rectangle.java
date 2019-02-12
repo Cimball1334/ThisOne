@@ -19,8 +19,8 @@ public class Rectangle {
 		return length * width;
 	}
 	
-	public String displayAreaFormula() {
-		return "The formula is  " + length + " * " + width + " = " + area();
+	public static String displayAreaFormula(double length, double width) {
+		return "The formula is  " + length + " * " + width;
 	
 	}
 	

@@ -9,7 +9,7 @@ public class rectangleTester {
 		
 
 //	System.out.println(tom.area());
-//	System.out.println(tom.displayAreaFormula());
+ System.out.println(Rectangle.displayAreaFormula(4,4));
 //		
 		System.out.println(tom);
 		

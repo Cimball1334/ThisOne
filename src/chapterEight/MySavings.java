@@ -11,7 +11,7 @@ public class MySavings {
 		
 		Scanner input = new Scanner(System.in);
 				while(userChoice != 0) {
-					System.out.println("1. SHow total");
+					System.out.println("1. Show total");
 					System.out.println("2. Add a penny");
 					System.out.println("3. Add a nickel");
 					System.out.println("4. Add a dime");
