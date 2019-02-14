@@ -16,6 +16,7 @@ public class NotBlackJack {
 	
 	public void method() {
 		
+		int value =(int) (Math.random() * 13);
 		
 		
 	}
