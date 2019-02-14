@@ -26,12 +26,6 @@ public class Circle {
 	 * Methods 
 	 */
 	
-	public static void Main(String[] args) {
-		
-		
-	}
-	
-	
 	public double getArea() {
 		return PI *	(radius * radius);
 	}
@@ -45,8 +39,6 @@ public class Circle {
 	public static void joke() {
 		System.out.println("REEEEEEEEEEE");
 	}
-	
-	
 	
 	
 	/*
