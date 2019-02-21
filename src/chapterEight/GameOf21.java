@@ -17,6 +17,7 @@ public class GameOf21 {
 	GameOf21 test = (GameOf21) c;
 	test.setTotal(0);
 	
+	
 		 int cpu = (int)(Math.random() * 19 + 2);
 			test.giveCards();
 			
