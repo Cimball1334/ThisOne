@@ -32,20 +32,20 @@ public class DigitExtractor {
 		String answer = input.next();
 		
 		if(answer.equalsIgnoreCase(W)) {
-			System.out.println("Your hundreds place digit is: " + first.Whole());
+			System.out.println("Your whole number is: " + first.Whole());
 		}
 		
-		if (input.next().equalsIgnoreCase(O)) {
-			System.out.println("Your hundreds place digit is: " + first.Ones());
+		if (answer.equalsIgnoreCase(O)) {
+			System.out.println("Your ones place digit is: " + first.Ones());
 		}
-		if (input.next().equalsIgnoreCase(T)) {
-			System.out.println("Your hundreds place digit is: " + first.Tens());
+		if (answer.equalsIgnoreCase(T)) {
+			System.out.println("Your tens place digit is: " + first.Tens());
 		}
-		if(input.next().equalsIgnoreCase(H)) {
+		if(answer.equalsIgnoreCase(H)) {
 			System.out.println("Your hundreds place digit is: " +first.Hundreds());
 		}
 		
-		if(input.next().equalsIgnoreCase("Q")) {
+		if(answer.equalsIgnoreCase("Q")) {
 			run = false;
 		}
 		
