@@ -4,7 +4,13 @@ import java.util.Scanner;
 
 public class DigitExtractor {
 
+	
 	private static boolean run = true;
+	
+	private static String W = new String("W");
+	private static String O = new String("O");
+	private static String T = new String("T");
+	private static String H = new String("H");
 	
 	public static void main(String args[]) {
 		
@@ -23,18 +29,20 @@ public class DigitExtractor {
 		
 		System.out.println("Enter your choice: ");
 		
-		if(input.next().equalsIgnoreCase("W")) {
-			first.Whole();
+		String answer = input.next();
+		
+		if(answer.equalsIgnoreCase(W)) {
+			System.out.println("Your hundreds place digit is: " + first.Whole());
 		}
 		
-		if (input.next().equalsIgnoreCase("O")) {
-			first.Ones();
+		if (input.next().equalsIgnoreCase(O)) {
+			System.out.println("Your hundreds place digit is: " + first.Ones());
 		}
-		if (input.next().equalsIgnoreCase("T")) {
-			first.Tens();
+		if (input.next().equalsIgnoreCase(T)) {
+			System.out.println("Your hundreds place digit is: " + first.Tens());
 		}
-		if(input.next().equalsIgnoreCase("H")) {
-			first.Hundreds();
+		if(input.next().equalsIgnoreCase(H)) {
+			System.out.println("Your hundreds place digit is: " +first.Hundreds());
 		}
 		
 		if(input.next().equalsIgnoreCase("Q")) {

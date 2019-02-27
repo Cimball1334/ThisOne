@@ -9,28 +9,28 @@ public class Num {
 	}
 	
 	
-	public void Whole() {
+	public int Whole() {
 		
 		//return the whole number
-		System.out.println("Your number is:  " + number);
+		return number;
 		
 	}
-	public void Hundreds() {
+	public int Hundreds() {
 		
 		
-		System.out.println("Your hundreds place digit is: " + (int)(number / 100));
+		return (int)(number / 100);
 		
 	}
 	
-	public void Tens() {
+	public int Tens() {
 		
-		System.out.println("Your tens place digit is: " + (int)( (number % 100)/10)   );
+		return (int)( (number % 100)/10)   ;
 		
 	}
 
-	public void Ones() {
+	public int Ones() {
 	
-		System.out.println("Your ones place digit is: " + (int)(number % 100 %10 ));
+		return (int)(number % 100 %10 );
 		
 	}
 	
