@@ -5,12 +5,12 @@ private double price, fat, carb, fiber;
 public String name = new String();
 
 
-public Food(double price, double fat, double carb, double fiber, String name) {
+public Food(double price, double fat, double carb, double fiber, String nameist) {
 	setPrice(price);
 	setFat(fat);
 	setCarb(carb);
 	setFiber(fiber);
-	name = name;
+	name = nameist;
 }
 
 public double getCarb() {
@@ -45,6 +45,12 @@ public void setPrice(double price) {
 	this.price = price;
 }
 
+public String toString() {
 
+	return  name + "\t" + getPrice() + "\t\t" +  getFat() + "\t\t" + getCarb() + "\t\t\t" + getFiber() ;
 
 }
+}
+
+
+
