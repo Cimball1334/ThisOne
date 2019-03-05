@@ -39,7 +39,7 @@ public class GameOf21 {
 			
 			}
 			
-			System.out.println("Hit enter to play again, Type stop to Stop playing \n");
+			System.out.println("Type stop to Stop playing or go to play again \n");
 			
 			if(input.next().equalsIgnoreCase("stop")) {
 				setRun(false);
