@@ -6,16 +6,21 @@ public class GameOf21 {
 
 	Scanner input = new Scanner(System.in);
 	
+	private boolean run;
 	private int total;
-	
+	private static String stop = new String("stop");
 	
 	public GameOf21() {
 		setTotal(0);
+		setRun(true);
 	
 	}
+	
 	public void play(Object c) {
-	GameOf21 test = (GameOf21) c;
-	test.setTotal(0);
+		
+		
+		GameOf21 test = (GameOf21) c;
+		test.setTotal(0);
 	
 	
 		 int cpu = (int)(Math.random() * 19 + 2);
@@ -33,10 +38,17 @@ public class GameOf21 {
 				System.out.println("You Lost :'( ");
 			
 			}
-			System.out.println("Hit enter to play again, Type stop to Stop playing");
+			
+			System.out.println("Hit enter to play again, Type stop to Stop playing \n");
+			
+			if(input.next().equalsIgnoreCase("stop")) {
+				setRun(false);
+				System.out.println("Thank You For Playing! \n\n");
+			}
+		
+			
 	}
 			
-	
 	public void giveCards() {
 		//give them the two cards off the start
 				int card = (int)(Math.random() * 12 + 1);
@@ -110,14 +122,31 @@ public class GameOf21 {
 		System.out.println("You have: " + total);
 	
 	}
+	
 	public int getTotal() {
 		return total;
 	}
 
-
 	public void setTotal(int total) {
 		this.total = total;
 	}
+	
+	public boolean isRun() {
+		return run;
+	}
+	
+	public void setRun(boolean run) {
+		this.run = run;
+	}
+	
+	public static String getStop() {
+		return stop;
+	}
+	
+	public static void setStop(String stop) {
+		GameOf21.stop = stop;
+	}
+	
 
 	
 }

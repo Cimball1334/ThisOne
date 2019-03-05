@@ -7,15 +7,15 @@ public class Play21 {
 	public static void main(String args[]) {
 		
 	 Scanner input = new Scanner(System.in);
-	String stop = new String("stop") ;
 	
 	 GameOf21 test = new GameOf21();
-	 do {
+	 
+	
+	while(test.isRun()){
 	
 	 test.play(test);
-	 }	
-	 while(input.next().equals(stop) != true);
-	 
+	 	}
+	
 	}
 	
 }
