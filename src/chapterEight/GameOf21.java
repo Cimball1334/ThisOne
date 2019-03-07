@@ -45,7 +45,7 @@ public class GameOf21 {
 				setRun(false);
 				System.out.println("Thank You For Playing! \n\n");
 			}
-		
+	
 			
 	}
 			
