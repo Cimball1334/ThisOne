@@ -6,7 +6,7 @@ public class Adder{
 		
 	Scanner input = new Scanner(System.in);
 	
-	private int firstNumber, secondNumber, score, correctAnswer, trial;
+	private int firstNumber, secondNumber, score, correctAnswer, points;
 	
 	public Adder() {
 		//constructor
@@ -30,10 +30,12 @@ public class Adder{
 	
 	public void question() {
 		//asks the questions
-		setFirstNumber( (int)(Math.random() * 20) );
-		setSecondNumber( (int)(Math.random() * 20) );
+		setFirstNumber( (int)(Math.random() * 19 + 1) );
+		setSecondNumber( (int)(Math.random() * 19 + 1) );
 
 		System.out.println(getFirstNumber() + " + " + getSecondNumber() + " = ");
+		setPoints(5);
+		
 		
 	}
 	
@@ -44,7 +46,19 @@ public class Adder{
 		
 		if(inputedAnswer == getCorrectAnswer() ) {
 			question();
+			setScore(getScore() + 5);
 		} 
+		
+		if(inputedAnswer != getCorrectAnswer()) {
+			points -= 2;
+			System.out.println("Enter Another Answer ");
+			
+			answer(inputedAnswer);
+		}
+		
+		if(points <= 0) {
+			System.out.println(getFirstNumber() + " + " + getSecondNumber() + " =  " + getCorrectAnswer() );
+		}
 			
 		
 		
@@ -85,7 +99,18 @@ public class Adder{
 
 	public void setCorrectAnswer(int correctAnswer) {
 		this.correctAnswer = correctAnswer;
-	}	
+	}
+
+	
+	public int getPoints() {
+		return points;
+	}
+	
+	public void setPoints(int points) {
+		
+		this.points = points;
+		
+	}
 	
 	
 }
