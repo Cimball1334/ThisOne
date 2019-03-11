@@ -42,39 +42,35 @@ public class Adder{
 	public void answer(int inputedAnswer) {
 		setCorrectAnswer( getFirstNumber() + getSecondNumber() );
 		
-		
-
-		if(points <= 0) {
-			System.out.println(getFirstNumber() + " + " + getSecondNumber() + " =  " + getCorrectAnswer() );
+		if(points >= 0) {
 			
-		}
 		
 		if(inputedAnswer == getCorrectAnswer() ) {
 			
 			setScore(getScore() + points);
-			System.out.println("You got: " + getPoints() + " points");
+			//System.out.println("You got: " + getPoints() + " points");
 		} 
 		
 		if(inputedAnswer != getCorrectAnswer()) {
 			points -= 2;
-			System.out.println("Enter Another Answer ");
-			answer(input.nextInt());
+			
+			if(points >= 0) {
+				System.out.println("Enter Another Answer ");
+				answer(input.nextInt());
+			}else {
+				System.out.println(getFirstNumber() + " + " + getSecondNumber() + " =  " + getCorrectAnswer() );		
+			}
 			
 		}
 		
+		} 
 		
-			
-		
-		
-	}
-	
-	
+}
 
 	public int getFirstNumber() {
 		return firstNumber;
 	}
 	
-
 	public void setFirstNumber(int firstNumber) {
 		this.firstNumber = firstNumber;
 	}
@@ -87,12 +83,10 @@ public class Adder{
 		this.secondNumber = secondNumber;
 	}
 	
-
 	public int getScore() {
 		return score;
 	}
 	
-
 	public void setScore(int score) {
 		this.score = score;
 	}
@@ -105,7 +99,6 @@ public class Adder{
 		this.correctAnswer = correctAnswer;
 	}
 
-	
 	public int getPoints() {
 		return points;
 	}
@@ -115,6 +108,5 @@ public class Adder{
 		this.points = points;
 		
 	}
-	
 	
 }

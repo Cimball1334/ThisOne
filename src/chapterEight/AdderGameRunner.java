@@ -10,14 +10,14 @@ public class AdderGameRunner {
 		int answer = 0;
 	
 		Adder game = new Adder();
-	
+	while(answer != 999) {
 		game.question();
 		answer = input.nextInt();
 		game.answer(answer);
 
-		//make this loop whenever i can
 		
 		
+	}
 		
 	}
 	
