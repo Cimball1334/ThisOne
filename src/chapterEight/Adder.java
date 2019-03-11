@@ -43,22 +43,26 @@ public class Adder{
 		setCorrectAnswer( getFirstNumber() + getSecondNumber() );
 		
 		
+
+		if(points <= 0) {
+			System.out.println(getFirstNumber() + " + " + getSecondNumber() + " =  " + getCorrectAnswer() );
+			
+		}
 		
 		if(inputedAnswer == getCorrectAnswer() ) {
-			question();
-			setScore(getScore() + 5);
+			
+			setScore(getScore() + points);
+			System.out.println("You got: " + getPoints() + " points");
 		} 
 		
 		if(inputedAnswer != getCorrectAnswer()) {
 			points -= 2;
 			System.out.println("Enter Another Answer ");
+			answer(input.nextInt());
 			
-			answer(inputedAnswer);
 		}
 		
-		if(points <= 0) {
-			System.out.println(getFirstNumber() + " + " + getSecondNumber() + " =  " + getCorrectAnswer() );
-		}
+		
 			
 		
 		
