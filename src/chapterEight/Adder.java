@@ -21,13 +21,6 @@ public class Adder{
 		setScore(0);
 	}
 	
-	public void newQuestion() {
-		setFirstNumber(0);
-		setSecondNumber(0);
-		setCorrectAnswer(0);
-	}
-	
-	
 	public void question() {
 		//asks the questions
 		setFirstNumber( (int)(Math.random() * 19 + 1) );
