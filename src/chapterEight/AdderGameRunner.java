@@ -14,7 +14,7 @@ public class AdderGameRunner {
 		game.question();
 		answer = input.nextInt();
 		game.answer(answer);
-
+//ahwbeokfjbqw
 		
 		
 	}
