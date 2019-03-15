@@ -42,6 +42,11 @@ public class Adder{
 	public void answer(int inputedAnswer) {
 		setCorrectAnswer( getFirstNumber() + getSecondNumber() );
 		
+		if(inputedAnswer == 999) {
+			points = -1;
+			System.out.println("You got: "+ score + " points");
+		}
+		
 		if(points >= 0) {
 			
 		
@@ -63,7 +68,8 @@ public class Adder{
 			
 		}
 		
-		} 
+		}
+		
 		
 }
 
