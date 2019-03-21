@@ -9,33 +9,46 @@ public class EvensAndOdds {
 		
 		int evennumber = 0, oddnumber = 0;
 		
-		for(int x = 0; x<25; x++) {
+		int number;
+		
+		for(int x = 0; x < 25; x++) {
+			
 			all[x] = (int)(Math.random() * 100 );
 			
-			if(all[x] % 2 == 0 ) {
-				evennumber++;
-			}else {
-				oddnumber++;
-			}
+				if(all[x] % 2 == 0 ) {
+					evennumber++;
+				}else {
+					oddnumber++;
+				}
 		}
 	
-		int[] evens = new int[evennumber], odds = new int[oddnumber];
+		int[] evens = new int[evennumber];
+		int[] odds = new int[oddnumber];
 		
+		int evenSpot = 0;
+		int oddSpot = 0;
 		for(int x = 0; x<25; x++) {
-			if(all[x] % 2 == 0 ) {
-				evens[x] = all[x];
+			number = all[x];
+			if(number % 2 == 0 ) {
+				evens[evenSpot] = number;
+				evenSpot++;
+				
 			}else {
-				odds[x] = all[x];
+				odds[oddSpot] = number;
+				oddSpot++;	
 			}
 		}
 		
-		for(int x = 0; x<25; x++) {
+		System.out.println("Odds: ");
+		for(int x = 0; x<oddnumber; x++) {
+			System.out.print(odds[x] + " ");
+			}
+		System.out.println();
+		System.out.println("Evens: ");
+		for(int x = 0; x<evennumber; x++) {
+			System.out.print(evens[x] + " ");
+			}
 		
-			System.out.println("Odds: ");
-	
-			System.out.print(odds[x]);
-		
-		}
 		
 		}
 		
