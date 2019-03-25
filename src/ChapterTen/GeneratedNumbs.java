@@ -12,22 +12,18 @@ public class GeneratedNumbs {
 		 int[] nums = new int[101];
 	
 		 
-		 int number;
-		 for(int x = 0; x < 101; x++) {
-		System.out.println(x + "zzzzzzzzzzzz");
-		System.out.println(nums[x] % 10);
-		System.out.println(nums[x] % 100 / 10 );
-		System.out.println(nums[x] % 1000 / 100 );
 		
-		//number = (int)((nums[x] % 10) + (nums[x] % 100 / 10 ) + (nums[x] % 1000 / 100));
-		// nums[x] = number;
+		 for(int number = 0; number < 101; number++) {
+	
+	   	 nums[number] = number + number % 10 + number % 100 / 10 + number % 1000 / 100;
+			 
 		 }
 		
 		 System.out.println("Index \t Generated Numbers");
-//		 for(int x = 0; x < 101; x++) {
-//				System.out.println(x + "\t" + nums[x] );
-//				
-//		 }
+		 for(int x = 0; x < 101; x++) {
+				System.out.println(x + "\t" + nums[x] );
+				
+		 }
 		 
 	}
 	
