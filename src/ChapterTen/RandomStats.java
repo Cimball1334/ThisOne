@@ -29,8 +29,8 @@ public class RandomStats {
 				occur[2]++;
 			}else if(nums[x] == 1){
 				occur[1]++;
-			}
-			
+			}else if(nums[x] == 0)
+				occur[0]++;
 		}
 			
 		System.out.println("number \t occurrences" );
