@@ -18,10 +18,14 @@ public class Coder {
 	        for(int x = 0; x < sentence.length(); x++) {
 	        	int letter = (int)(sentence.charAt(x));
 	        	
-	        	int coded = letter + 3;
+	        	int coded = letter + 2;
 	        	
 	        	if(coded > 122) {
 	        		coded -= 26;
+	        	}
+	        	
+	        	if(letter == 32) {
+	        		coded = 32;
 	        	}
 	        	char codes = (char) coded;
 	        	
