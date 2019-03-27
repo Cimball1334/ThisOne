@@ -24,10 +24,8 @@ public class Coder {
 	        		coded -= 26;
 	        	}
 	        	char codes = (char) coded;
-	        	//going from numbner to letter:::::
-	        	//cast as (char)
 	        	
-	        	code += codes;
+	          	code += codes;
 	        	
 	        }
 	        
