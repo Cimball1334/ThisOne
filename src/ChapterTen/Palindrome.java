@@ -3,31 +3,65 @@ package ChapterTen;
 import java.util.Scanner;
 
 public class Palindrome {
-
-public static void main(String[] args)
-{
-    Scanner input = new Scanner(System.in);
-	//enter string
-	System.out.println("Enter a thing:");
-	
-	String thing = new String(input.next());
-	//find first number and find last number
-	//x is starting ;;;;;  length - x is last
-	for(int x =0; x <= thing.length(); x++){
-		if(thing.charAt(x) != thing.charAt(thing.length() - 1 - x)) {
-			System.out.println("This is not a Palindrome");
-			x = 200000;
-		}
-	}
-	System.out.println("This is a palindrome");
-	//discover if they are the same dec ascii 
-	
-	//if they are continue to the next one subractnig the number we are on (now 2) from the final number to get the second to last number
-	
-	//diddo 
-	
-	// i want a fucking taco
-	
+    public static void main(String[] args)  
+    { 
+    	Scanner input = new Scanner(System.in);
+    			
+    	
+    	System.out.println("Enter a string");
+    	
+        String str = input.next(); 
+        if( sentencePalindrome(str)) 
+          System.out.println("Sentence is palindrome"); 
+        else
+          System.out.println("Sentence is not" + " " + 
+                                         "palindrome"); 
+    } 
+    
+	static boolean sentencePalindrome(String str) 
+    {     
+        int l = 0; 
+        int h = str.length()-1; 
+          
+        // Lowercase string 
+        str = str.toLowerCase(); 
+          
+        // Compares character until they are equal 
+        while(l <= h) 
+        { 
+              
+            char getAtl = str.charAt(l); 
+            char getAth = str.charAt(h); 
+              
+            // If there is another symbol in left 
+            // of sentence 
+            if (!(getAtl >= 'a' && getAtl <= 'z')) 
+                l++; 
+              
+            // If there is another symbol in right  
+            // of sentence 
+            else if(!(getAth >= 'a' && getAth <= 'z')) 
+                h--; 
+              
+            // If characters are equal 
+            else if( getAtl == getAth) 
+            { 
+                l++; 
+                h--; 
+            } 
+              
+            // If characters are not equal then 
+            // sentence is not palindrome 
+            else 
+                return false; 
+        } 
+          
+        // Returns true if sentence is palindrome 
+        return true;     
+    } 
+      
+    // Driver program to test sentencePallindrome() 
+} 
 	// done;
-}
-}
+
+
