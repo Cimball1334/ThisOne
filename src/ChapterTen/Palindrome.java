@@ -15,7 +15,7 @@ public class Palindrome {
         int h = str.length()-1; 
           
 
-      //  str = str.toLowerCase(); 
+        str = str.toLowerCase(); 
         String reverse = "";
         
         for(int i = 0; i < str.length(); i++) {
